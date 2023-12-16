@@ -1,0 +1,338 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.header {
+  background-color: #212529;
+}
+.header .navbar {
+  height: 95px;
+  padding: 16px 0;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+.header .navbar .logo {
+  height: 32px;
+  width: 188px;
+}
+.header .navbar .startLogo {
+  width: 100%;
+  height: 100%;
+}
+
+.header .navbar ul {
+  display: flex;
+}
+.header .navbar ul li {
+  font-weight: 300;
+  
+  list-style: none;
+  font-size: 1rem;
+  padding-right: 8px;
+}
+.header .navbar ul li .link {
+  letter-spacing: 0.0625em;
+  text-decoration: none;
+  color: #fff;
+  padding: 8px;
+}
+.header .navbar ul li .link:hover{
+  color:#ffc800;
+  transition: 0.2s ease-in-out;
+}
+.panel {
+  background-image: url(bg.jpg);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+  max-width: 100%;
+  width: 100% auto;
+}
+.panel .container {
+  margin: auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  height: 100%;
+}
+.panel .container p {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+.panel .container h1 {
+  letter-spacing: 3px;
+  font-size: 4.5rem;
+  margin-bottom: 4rem;
+}
+.panel .container .btn {
+  padding: 20px 40px;
+  font-weight: 700 !important;
+  background-color: #ffc800;
+  border: none;
+  border-radius: 7px;
+  color: white;
+  font-size: larger;
+}
+.panel .container .btn:hover {
+  transition: 0.2s ease-in-out;
+  background-color: #a68200;
+}
+.services {
+  width: 100%;
+  height: 670px;
+
+}
+.services .container {
+  display: flex;
+  width: 90%;
+  margin: auto;
+}
+
+.services .container .service-div {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.services .container .service-div .service-icon {
+  position: relative;
+  width: 128px;
+  height: 128px;
+  color: white;
+  background-color: #ffc800;
+  border-radius: 100%;
+  padding: 10px;
+}
+.services .container .service-div .service-icon i {
+  font-size: 4em;
+  position: absolute;
+}
+.services .container .service-div .service-icon i.fa-lock {
+  padding: 10px 15px;
+  top: 15%;
+  right: 17%;
+}
+.services .container .service-div .service-icon i.fa-laptop {
+  top: 25%;
+  right: 20%;
+}
+.services .container .service-div .service-icon i.fa-cart-shopping {
+  top: 30%;
+  right: 25%;
+}
+.services .container .service-div h2 {
+  padding: 20px 0;
+}
+.services .container .service-div span {
+  text-align: center;
+  color: #6c757d;
+}
+.portfolio {
+  height: 1100px;
+  width: 100%;
+  background-color: #f8f9fa;
+}
+
+.portfolio .container{
+    width: 90%;
+    margin: auto;
+display: flex;
+flex-wrap: wrap;
+
+}
+.portfolio .container .example-div {
+  width: 30%;
+  background-color:white;
+  margin: 0 10px 20px 10px;
+  
+}
+.portfolio .container .example-div .img-div {
+  height: 252px;
+  position: relative;
+}
+.portfolio .container .example-div .img-div img {
+  height: 100%;
+  width: 100%;
+}
+.portfolio .container .example-div .text {
+  text-align: center;
+  padding:20px 0;
+margin-bottom: 0;
+}
+
+.portfolio .container .example-div .text h2{
+    padding-bottom: 5px;
+}
+.portfolio .container .example-div .img-div .plus {
+  position: absolute;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #ffc800cd;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.2s ease-in-out;
+}
+.portfolio .container .example-div .img-div .plus span{
+    color:white;
+    font-size: 80px;
+    font-weight: 400;
+}
+.portfolio .container .example-div .img-div:hover .plus{
+visibility: visible;
+opacity: 1;
+}
+.about{
+  width: 100%;
+  display: none;
+
+}
+.about .longdiv{
+  width: 70%;
+  margin:auto;
+
+}
+.about .longdiv ul li{
+  display: flex;
+ 
+
+  margin: auto;
+  /* justify-content: left; */
+  
+}
+.about .longdiv ul li .panel-text{
+  width: 40%;
+  border:1px solid pink;
+}
+
+.about .longdiv ul li .image{
+  width: 20%;
+}
+.about .longdiv ul li .image img{
+  width: 100%;
+  height: 100%;
+  border-radius:100%;
+}
+.ourTeam {
+  background-color: #F8F9FA;
+  height: fit-content;
+  width: 100%;
+  margin: auto; /* Center the section horizontally */
+  text-align: center; /* Center the content inside the section horizontally */
+}
+
+.ourTeam .team-members {
+  display: flex;
+  justify-content: center; /* Center the flex items horizontally */
+  flex-wrap: wrap; /* Wrap flex items to the next line if they overflow */
+  margin-top: 0; /* Add some space at the top if needed */
+}
+
+/* .ourTeam{
+  background-color:#F8F9FA;
+  height: fit-content;
+  width: 100%;
+  margin: auto;
+}
+.ourTeam .team-members{
+ display: flex;
+ margin: auto;
+} */
+.ourTeam .team-members .box{
+  display: flex;
+  margin: 40px;
+  flex-direction: column;
+  align-items:center;
+
+}
+.ourTeam .team-members .box h4{
+  font-size: 1.7rem;
+}
+.ourTeam .team-members .box span{
+  color:#6C757D;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+.ourTeam .team-members .box .image{
+  height: 224px;
+  width: 224px;
+  padding-bottom: 15px;
+}
+.ourTeam .team-members .box .image img{
+  width: 100%;
+  height: 100%;
+  border-radius:100%;
+  border:8px solid #DFE0E1
+}
+
+/* 
+.companies{
+  width: 100%;
+  margin: auto;
+
+}
+.companies ul{
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+}
+.companies ul li .company{
+  flex: 1;
+  width: 100px;
+}
+.companies ul li .company img{
+  width: 100%;
+  height: 100%;
+} */.companies {
+  width: 100%;
+  margin: auto;
+}
+.companies .container{
+  width: 85%;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  align-items:center;
+  padding: 20px 0 40px 0;
+}
+.companies .container .company{
+  
+  width: 25%;
+  height: 80px;
+}
+
+.companies .container .company img{
+  height: 100%;
+  width: 100%;
+padding: 20px;
+}
+
+.contactUs {
+  background-image:url(https://startbootstrap.github.io/startbootstrap-agency/assets/img/map-image.png);
+  background-size: cover; /* Cover the entire section */
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: white; /* Text color on top of the background image */
+  padding: 2rem; /* Add some padding to the section content */
+  text-align: center; /* Center align text */
+}
